@@ -116,7 +116,7 @@ main {
     background-color: #FEF9E9;
     border-radius: 10%;
     overflow: hidden;
-    margin: 20px;
+    margin: 0px;
     
 }
 
@@ -125,8 +125,26 @@ main {
 }
 
 
+.section4 {
+    height: 200px;
+    margin: 50px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.section4 button{
+position: absolute;
+left: 75%;
+
+}
+
+.section4 > p{
+position: absolute;
+right: 69%;
+width: 500px;
 
 
+}
 
 
 footer {
