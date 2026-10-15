@@ -1,0 +1,32 @@
+body {
+    position: relative;
+    margin: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30%  auto 30%;
+    grid-template-rows: 100px auto 200px;
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "footer footer footer";
+    
+}
+
+header {
+    grid-area: header;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+
+
+main {
+    grid-area: main;
+}
+
+
+footer {
+    grid-area: footer;
+}
