@@ -9,6 +9,7 @@ body {
     "header header header"
     "main main main"
     "footer footer footer";
+    background-color: #FEF9E9;
     
 }
 
@@ -59,7 +60,26 @@ main {
     grid-area: main;
 }
 
+.section1 {
+   background-color:#FEF9E9;
+   opacity: 90%;
+   max-width: 300px;
+   max-height: 300px;
+   position: absolute;
+   z-index: 1;
+   padding: 30px;
+   margin: 170px 0 0 50px;
+   border-radius: 10%;
 
+}
+
+#hero {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    overflow: hidden; 
+    z-index: 0;
+}
 
 footer {
     grid-area: footer;
