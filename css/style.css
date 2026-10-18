@@ -4,7 +4,7 @@ body {
     width: 100%;
     display: grid;
     grid-template-columns: 30%  auto 30%;
-    grid-template-rows: 100px auto 200px;
+    grid-template-rows: auto auto auto;
     grid-template-areas: 
     "header header header"
     "main main main"
@@ -24,9 +24,11 @@ p {
 
 header {
     grid-area: header;
-    height: 100px;
+    min-height: 100px;
     display: flex;
-    margin: 30px 10px;
+    margin: 0px 0px;
+    box-sizing: border-box;
+    align-items: center;
     
 }
 
@@ -71,7 +73,6 @@ main {
    position: absolute;
    z-index: 1;
    padding: 30px;
-   margin: 170px 0 0 50px;
    border-radius: 10%;
    top: 170px;
    left: 50px;
@@ -125,7 +126,7 @@ button {
 
 .section3 > div {
     width: 400px;
-    max-height: 450px;
+    max-height: 420px;
     display: flex;
     flex-direction: column;
     background-color: #FEF9E9;
@@ -169,7 +170,6 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 300px;
     text-decoration: none;
     list-style: none;
     gap: 10px;
@@ -240,11 +240,8 @@ nav ul{
    
 }
 
-nav ul li{
-    border-bottom: 1px black;
-    gap: 10px;
-    
-}
+
+
 
 .section1 {
    
@@ -255,9 +252,15 @@ nav ul li{
    padding: 20px 0px;
    margin: auto;
    border-radius: 0%;
+   box-sizing: border-box;
    
+}
+
+div.section1 {
+ border-bottom: 2px solid black;
 
 }
+
 
 #hero {
     position: relative;
